@@ -57,7 +57,7 @@ describe('Pages', () => {
     }
     pages.calc(req, res)
     expect(res.send.calledOnce).to.be.true
-    expect(res.send.calledWith('NaoDivisivel')).to.be.false
+    expect(res.send.calledWith('NaoDivisivel')).to.be.true
   })
 
   it('should calc properly - nao divisivel zero', () => {
